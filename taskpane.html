@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comma → Bullets</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Konverter kommasepareret tekst</h2>
+    <p>Markér tekst inde i en tekstboks og tryk konverter.</p>
+
+    <label for="maxChars">Maks tegn pr. kolonne (heuristik):</label>
+    <input id="maxChars" type="number" value="200" min="50" max="1000" />
+
+    <div class="buttons">
+      <button id="convert">Konverter</button>
+      <button id="convert-selection">Konverter kun markeret</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+  <script src="taskpane.js"></script>
+</body>
+</html>
